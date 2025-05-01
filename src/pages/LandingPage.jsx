@@ -1,28 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
+import { LandingHeader } from "../components/LandingHeader";
 import "../assets/styles/LandingPage.css";
-import logo from "../assets/images/logo1.png"; // csak ha használsz logót
 
 export function LandingPage() {
-  const navigate = useNavigate();
-
-  const handleLoginClick = () => {
-    navigate("/login");
-  };
+  
 
   return (
     <div className="landing-container">
-      <header className="hero-section">
-        {/* opcionális logó */}
-        <img src={logo} alt="Cég logó" className="landing-logo" />
+      <LandingHeader />
 
-        <h1>Üdvözlünk a Magánrendelő Portálon</h1>
-        <p>Egészségügyi szolgáltatások, orvosi időpontfoglalás és még sok más.</p>
-
-        <button className="landing-button" onClick={handleLoginClick}>
-          Belépés
-        </button>
-      </header>
+      <main className="hero-section">
+        <h2>Egészségügyi szolgáltatások, időpontfoglalás, orvosaink bemutatása</h2>
+        <p>Korszerű technológiával, emberközpontú gondoskodással.</p>
+      </main>
 
       <footer className="landing-footer">
         <p>&copy; {new Date().getFullYear()} Modern Egészség Centrum</p>

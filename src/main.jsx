@@ -4,8 +4,6 @@ import { RouterProvider } from "react-router-dom";
 import "./assets/styles/index.css";
 import { router } from "./router/router"; // saját router
 
-//  import "./index.css"; // ha létezik, ha nem, akkor törölhető
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
