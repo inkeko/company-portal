@@ -7,8 +7,8 @@ export function Header() {
       <h1 style={styles.logo}>Cégem Logója</h1>
       <nav>
         <ul style={styles.navList}>
-          <li><Link to="/" style={styles.link}>Főoldal</Link></li>
-          <li><Link to="/login" style={styles.link}>Belépés</Link></li>
+          <li><Link to="/dashboard" style={styles.link}>Főoldal</Link></li>
+          <li><Link to="/" style={styles.link}>Kijelentkezés</Link></li>
         </ul>
       </nav>
     </header>
