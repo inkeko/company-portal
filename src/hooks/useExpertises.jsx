@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import urologiaImg from "../assets/images/Urologia.jpg";
-import psychologistImg from "../assets/images/Psychologist.jpg";
+import IMAGES from "../IMAGES";
 
 export function useExpertises() {
   const [expertises, setExpertises] = useState([]);
@@ -10,16 +9,30 @@ export function useExpertises() {
    const dummyData = [
   {
     id: 1,
+    image: IMAGES.urologia,
     name: "Urológia",
     description: "Az urológia a húgyutak és a férfi nemi szervek betegségeivel foglalkozik.",
-    image: urologiaImg,
-  },
+    },
   {
     id: 2,
+     image: IMAGES.psychologist,
     name: "Pszichológia",
     description: "A pszichológia az emberi viselkedés és mentális folyamatok tudománya.",
-    image: psychologistImg,
-  },
+    },
+    {
+        id: 3,
+        image: IMAGES.surogen,
+        name: "Surgeon",
+        description:
+          "Surgery involves treating medical conditions through operative techniques.",
+      },
+      {
+        id: 4,
+        image: IMAGES.dentist,
+        name: "Dentist",
+        description:
+          "Dentistry focuses on oral cavity and chewing apparatus treatment.",
+      },
 ];
 
     // Simuláció

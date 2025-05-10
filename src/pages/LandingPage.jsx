@@ -30,7 +30,7 @@ export function LandingPage() {
                 key={exp.id}
                 title={exp.name}
                 description={exp.description}
-                image="/placeholder.jpg"
+                image={exp.image}
               />
             ))}
           </div>
