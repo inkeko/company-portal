@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "jsx": "react",
+    "module": "esnext",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {"*": ["src/*"]},
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": ["src"]
+}

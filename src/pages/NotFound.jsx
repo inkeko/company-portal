@@ -1,5 +1,4 @@
-import React from "react";
-
+import * as React from "react";
 export function NotFound() {
   return (
     <div style={{ padding: "2rem", textAlign: "center" }}>

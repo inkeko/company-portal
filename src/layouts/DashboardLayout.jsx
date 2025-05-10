@@ -1,8 +1,4 @@
 
-import React from "react";
-import { Outlet, Link } from "react-router-dom";
-import { UserHeader } from "../components/UserHeader";
-import { UserFooter } from "../components/UserFooter";
 
 export function DashboardLayout() {
   return (

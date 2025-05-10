@@ -1,5 +1,4 @@
-import React from "react";
-
+import * as React from "react";
 export function Dashboard() {
   return (
     <div style={{ padding: "2rem", backgroundColor: "#e0f7ff" }}>
