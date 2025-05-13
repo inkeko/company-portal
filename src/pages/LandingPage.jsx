@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LandingHeader } from "../components/LandingHeader";
+import { LandingHeader } from "../components/LandingHeader.jsx";
 import { LandingIntro } from "../components/LandingIntro.jsx";
 import { LandingExpertises } from "../components/LandingExpertises.jsx";
 import { LandingFooter } from "../components/LandingFooter.jsx";
