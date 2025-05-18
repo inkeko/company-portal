@@ -1,0 +1,24 @@
+{
+  "header": {
+    "title": "Modern Egészség Centrum",
+    "subtitle": "A jövő egészsége ma kezdődik"
+  },
+  "buttons": {
+    "login": "Belépés",
+    "register": "Regisztráció"
+  },
+  "intro": {
+    "heading": "Egészségügyi szolgáltatások, időpontfoglalás, orvosaink bemutatása",
+    "description": "Korszerű technológiával, emberközpontú gondoskodással. Időpontfoglalás kizárólag regisztrált pácienseinknek."
+  },
+  "expertise": {
+    "title": "Szakterületeink",
+    "loading": "Betöltés..."
+  },
+  "footer": {
+  "title": "Modern Egészség Centrum",
+  "contact": "Kapcsolat: info@egeszseg.hu",
+  "phone": "+36 30 123 4567"
+}
+}
+

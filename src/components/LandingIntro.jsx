@@ -1,13 +1,14 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 export function LandingIntro() {
+  const { t } = useTranslation();
+
   return (
     <main className="hero-section">
-      <h2>Egészségügyi szolgáltatások, időpontfoglalás, orvosaink bemutatása</h2>
-      <p>
-        Korszerű technológiával, emberközpontú gondoskodással. Időpontfoglalás
-        kizárólag regisztrált pácienseink részére elérhető.
-      </p>
+     <h2>{t("intro.heading")}</h2>
+      <p>{t("intro.description")}</p>
     </main>
   );
 }
+

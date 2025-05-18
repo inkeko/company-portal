@@ -2,12 +2,17 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
+    "noEmit": true, 
     "jsx": "react",
     "module": "esnext",
     "target": "es6",
     "moduleResolution": "node",
+    "resolveJsonModule": true,   
+    "allowSyntheticDefaultImports": true,        
     "baseUrl": "./",
-    "paths": {"*": ["src/*"]},
+    "paths": {
+      "*": ["src/*"]
+    },
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "include": ["src"]

@@ -1,0 +1,24 @@
+{
+  "header": {
+    "title": "Modern Health Center",
+    "subtitle": "The future of health begins today"
+  },
+  "buttons": {
+    "login": "Login",
+    "register": "Register"
+  },
+  "intro": {
+    "heading": "Healthcare services, appointment booking, meet our doctors",
+    "description": "With modern technology and patient-centered care. Appointment booking is available only for registered patients."
+  },
+  "expertise": {
+    "title": "Our Specialties",
+    "loading": "Loading..."
+  },
+  "footer": {
+  "title": "Modern Health Center",
+  "contact": "Contact: info@healthcenter.com",
+  "phone": "+36 30 123 4567"
+}
+
+}

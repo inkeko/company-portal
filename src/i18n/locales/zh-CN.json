@@ -1,0 +1,24 @@
+{
+  "header": {
+    "title": "现代健康中心",
+    "subtitle": "未来的健康从今天开始"
+  },
+  "buttons": {
+    "login": "登录",
+    "register": "注册"
+  },
+  "intro": {
+    "heading": "医疗服务、预约挂号、医生介绍",
+    "description": "现代技术，关怀为本。预约仅限已注册患者。"
+  },
+  "expertise": {
+    "title": "我们的专科",
+    "loading": "加载中..."
+  },
+  "footer": {
+  "title": "现代健康中心",
+  "contact": "联系方式：info@healthcenter.cn",
+  "phone": "+36 30 123 4567"
+}
+
+}

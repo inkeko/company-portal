@@ -1,0 +1,25 @@
+{
+  "header": {
+    "title": "Modernes Gesundheitszentrum",
+    "subtitle": "Die Gesundheit der Zukunft beginnt heute"
+  },
+  "buttons": {
+    "login": "Anmelden",
+    "register": "Registrieren"
+  },
+  "intro": {
+    "heading": "Gesundheitsdienstleistungen, Terminbuchung, Vorstellung unserer Ärzte",
+    "description": "Mit moderner Technologie und patientenorientierter Fürsorge. Terminbuchung ist nur für registrierte Patienten möglich."
+  },
+  "expertise": {
+    "title": "Unsere Fachgebiete",
+    "loading": "Lade..."
+  },
+ "footer": {
+  "title": "Modernes Gesundheitszentrum",
+  "contact": "Kontakt: info@gesundheit.de",
+  "phone": "+36 30 123 4567"
+}
+
+}
+
