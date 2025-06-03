@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useExpertises } from "../hooks/useExpertises";
+import { LanguageContext } from "../context/LanguageContext";
 import { ExpertiseCard } from "./ExpertiseCard";
 import { useTranslation } from "react-i18next";
 
