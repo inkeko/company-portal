@@ -1,7 +1,7 @@
 import * as React from "react";
-import { LanguageContext } from "../context/LanguageContext";
 import { ExpertiseCard } from "./ExpertiseCard";
 import { useTranslation } from "react-i18next";
+import { useExpertises } from "../hooks/useExpertises"; // fontos!
 
 export function LandingExpertises() {
   const { t } = useTranslation();
@@ -16,10 +16,10 @@ export function LandingExpertises() {
         <div className="expertise-grid">
           {expertises.map((exp) => (
             <ExpertiseCard
-              key={exp.id}
+              key={exp.areaOfExpertiseId}
               title={exp.name}
               description={exp.description}
-              image={exp.image}
+              image={exp.imageUrl}
             />
           ))}
         </div>
