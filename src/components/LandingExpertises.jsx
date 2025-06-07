@@ -7,6 +7,9 @@ export function LandingExpertises() {
   const { t } = useTranslation();
   const { expertises, loading } = useExpertises();
 
+   // Itt az API URL:
+  const apiUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+  
   return (
     <section className="expertise-section">
       <h2>{t("expertise.title")}</h2>
@@ -19,7 +22,7 @@ export function LandingExpertises() {
               key={exp.areaOfExpertiseId}
               title={exp.name}
               description={exp.description}
-              image={exp.imageUrl}
+              image={`${apiUrl}${exp.imageUrl}`}
             />
           ))}
         </div>
