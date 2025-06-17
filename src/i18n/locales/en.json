@@ -13,12 +13,14 @@
   },
   "expertise": {
     "title": "Our Specialties",
-    "loading": "Loading..."
+    "loading": "Loading...",
+     "callus": "Call us",
+  "emailus": "Email us"
   },
   "footer": {
   "title": "Modern Health Center",
-  "contact": "Contact: info@healthcenter.com",
-  "phone": "+36 30 123 4567"
+  "contact": "Contact: {{email}}",
+  "phone": "Phone: {{phone}}"
 }
 
 }

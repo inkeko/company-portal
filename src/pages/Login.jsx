@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/Login.css"; // Külső CSS
+import { login } from "../api/auth"; // Ez legyen jól megírva, lásd később!
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -9,25 +10,22 @@ export function Login() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (email === "admin@example.com" && password === "Admin123+") {
-      navigate("/admin");
-    } else if (email === "user@example.com" && password === "User123+") {
-      navigate("/dashboard");
-    } else {
-      setError("❌ Hibás email vagy jelszó!");
-    }
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setError("");
+  try {
+    await login(email, password);    // <-- csak await, nincs response változó!
+    navigate("/dashboard");
+  } catch {
+    setError("❌ Hibás email vagy jelszó!");
+  }
+};
 
   return (
     <div className="login-wrapper">
       <div className="login-container">
         <h2>Bejelentkezés</h2>
-
         {error && <p className="error-message">{error}</p>}
-
         <form onSubmit={handleSubmit}>
           <div>
             <label>Email:</label><br />
@@ -39,7 +37,6 @@ export function Login() {
               required
             />
           </div>
-
           <div>
             <label>Jelszó:</label><br />
             <input
@@ -50,10 +47,10 @@ export function Login() {
               required
             />
           </div>
-
           <button type="submit">Belépés</button>
         </form>
       </div>
     </div>
   );
 }
+

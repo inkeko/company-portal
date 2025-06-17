@@ -13,12 +13,14 @@
   },
   "expertise": {
     "title": "Unsere Fachgebiete",
-    "loading": "Lade..."
+    "loading": "Lade...",
+     "callus": "Ruf uns an",
+    "emailus": "Schreib uns"
   },
  "footer": {
   "title": "Modernes Gesundheitszentrum",
-  "contact": "Kontakt: info@gesundheit.de",
-  "phone": "+36 30 123 4567"
+  "contact": "Kontakt: {{email}}",
+  "phone": "Telefonnummer: {{phone}}"
 }
 
 }

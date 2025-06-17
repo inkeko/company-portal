@@ -13,12 +13,14 @@
   },
   "expertise": {
     "title": "我们的专科",
-    "loading": "加载中..."
+    "loading": "加载中...",
+     "callus": "致电我们",
+  "emailus": "发邮件"
   },
   "footer": {
   "title": "现代健康中心",
-  "contact": "联系方式：info@healthcenter.cn",
-  "phone": "+36 30 123 4567"
+  "contact": "联系方式: {{email}}",
+  "phone": "电话: {{phone}}"
 }
 
 }

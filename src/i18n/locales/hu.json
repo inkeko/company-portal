@@ -13,12 +13,14 @@
   },
   "expertise": {
     "title": "Szakterületeink",
-    "loading": "Betöltés..."
+    "loading": "Betöltés...",
+    "callus": "Hívj ",
+    "emailus": "Írj emailt"
   },
   "footer": {
-  "title": "Modern Egészség Centrum",
-  "contact": "Kapcsolat: info@egeszseg.hu",
-  "phone": "+36 30 123 4567"
-}
+    "title": "Modern Egészség Centrum",
+    "contact": "Kapcsolat: {{email}}",
+    "phone": "Telefon: {{phone}}"
+  }
 }
 
