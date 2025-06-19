@@ -1,7 +1,9 @@
   
   
 // src/router/router.jsx
-import * as React from "react";
+
+import { Doctor } from "../pages/Doctor";
+import { DoctorLayout} from "../layouts/DoctorLayout"
 import { createBrowserRouter } from "react-router-dom";
 import { Login } from "../pages/Login";
 import {Admin} from"../pages/Admin";
@@ -33,7 +35,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/doctor",
-    element: <DoktorLayout />, // 🔥 most már layout-tal
+    element: <DoctorLayout />, // 🔥 most már layout-tal
     children: [
       { index: true, element: <Doctor /> } // ⬅️ az új oldal
     ]
