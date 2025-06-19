@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../assets/styles/Login.css"; // Külső CSS
-import { login } from "../api/auth"; // Ez legyen jól megírva, lásd később!
+import "../assets/styles/Login.css";
+import { login } from "../api/auth"; // Lásd lent, ezt írjuk majd meg!
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -10,16 +10,28 @@ export function Login() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  // Ezt **FELTÉTLEN** definiálni kell!
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setError("");
-  try {
-    await login(email, password);    // <-- csak await, nincs response változó!
-    navigate("/dashboard");
-  } catch {
-    setError("❌ Hibás email vagy jelszó!");
-  }
-};
+    e.preventDefault();
+    try {
+      // Feltételezzük, hogy a login függvény egy axios POST-ot csinál a /login-ra!
+       const response = await login(email, password);
+      const userData = response.data;
+      // Ide azt is meg lehet írni, hogy jogosultság alapján hova lépjen tovább:
+        if (userData.roles.includes("ROLE_ADMIN")) {
+      navigate("/admin");
+    } else if (userData.roles.includes("ROLE_DOCTOR")) {
+      navigate("/doctor");
+    } else if (userData.roles.includes("ROLE_CLIENT")) {
+      navigate("/dashboard");
+    } else {
+      // fallback
+      setError("Ismeretlen jogosultság!");
+    }
+    } catch  {
+      setError("❌ Hibás email vagy jelszó!");
+    }
+  }; 
 
   return (
     <div className="login-wrapper">
@@ -53,4 +65,5 @@ export function Login() {
     </div>
   );
 }
+
 

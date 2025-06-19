@@ -4,29 +4,38 @@
 import * as React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { Login } from "../pages/Login";
-
+import {Admin} from"../pages/Admin";
 import { DashboardLayout } from "../layouts/DashboardLayout";
 import { AdminLayout } from "../layouts/AdminLayout";
 import { NotFound } from "../pages/NotFound";
 
 import { LandingPage } from "../pages/LandingPage";
+import { Dashboard } from "pages/Dashboard";
 
 
 export const router = createBrowserRouter([
   { path: "/", element: <LandingPage /> },
   { path: "/login", element: <Login /> },
-  {
-    path: "/admin",
-    element: <AdminLayout />,
-    children: [
-      { index: true, element: <AdminPage /> }
-    ]
-  },
+  
   {
     path: "/dashboard",
     element: <DashboardLayout />, // 🔥 most már layout-tal
     children: [
-      { index: true, element: <UserHome /> } // ⬅️ az új oldal
+      { index: true, element: <Dashboard /> } // ⬅️ az új oldal
+    ]
+  },
+  {
+    path: "/admin",
+    element: <AdminLayout />, // 🔥 most már layout-tal
+    children: [
+      { index: true, element: <Admin /> } // ⬅️ az új oldal
+    ]
+  },
+  {
+    path: "/doctor",
+    element: <DoktorLayout />, // 🔥 most már layout-tal
+    children: [
+      { index: true, element: <Doctor /> } // ⬅️ az új oldal
     ]
   },
   { path: "*", element: <NotFound /> }
