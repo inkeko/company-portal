@@ -17,6 +17,18 @@
      "callus": "Ruf uns an",
     "emailus": "Schreib uns"
   },
+  "dashboard": {
+    "title": "Benutzeroberfläche",
+    "welcome": "Willkommen im Dashboard !"
+  },
+  "patient": {
+    "header": "Patientenbereich",
+    "menu": {
+      "home": "Startseite",
+      "appointments": "Meine Termine",
+      "profile": "Mein Profil"
+    }
+  },
  "footer": {
   "title": "Modernes Gesundheitszentrum",
   "contact": "Kontakt: {{email}}",

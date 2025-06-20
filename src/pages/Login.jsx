@@ -3,12 +3,14 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/Login.css";
 import { login } from "../api/auth"; // Lásd lent, ezt írjuk majd meg!
+import { useUser } from "../context/UserContext";
 
 export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { setUser} = useUser();
 
   // Ezt **FELTÉTLEN** definiálni kell!
   const handleSubmit = async (e) => {
@@ -17,6 +19,7 @@ export function Login() {
       // Feltételezzük, hogy a login függvény egy axios POST-ot csinál a /login-ra!
        const response = await login(email, password);
       const userData = response.data;
+      setUser (userData);
       // Ide azt is meg lehet írni, hogy jogosultság alapján hova lépjen tovább:
         if (userData.roles.includes("ROLE_ADMIN")) {
       navigate("/admin");

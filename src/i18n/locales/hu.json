@@ -17,6 +17,18 @@
     "callus": "Hívj ",
     "emailus": "Írj emailt"
   },
+  "dashboard": {
+    "title": "Felhasználói felület",
+    "welcome": "Üdvözlünk a kezelői felületen !"
+  },
+  "patient": {
+  "header": "Páciens felület",
+  "menu": {
+    "home": "Kezdőlap",
+    "appointments": "Időpontjaim",
+    "profile": "Profilom"
+  }
+},
   "footer": {
     "title": "Modern Egészség Centrum",
     "contact": "Kapcsolat: {{email}}",

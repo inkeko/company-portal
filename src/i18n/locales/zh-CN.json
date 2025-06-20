@@ -17,6 +17,18 @@
      "callus": "致电我们",
   "emailus": "发邮件"
   },
+   "dashboard": {
+    "title": "用户界面",
+    "welcome": "欢迎来到控制面板 !"
+  },
+  "patient": {
+    "header": "患者界面",
+    "menu": {
+      "home": "首页",
+      "appointments": "我的预约",
+      "profile": "我的资料"
+    }
+  },
   "footer": {
   "title": "现代健康中心",
   "contact": "联系方式: {{email}}",

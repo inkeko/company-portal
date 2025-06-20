@@ -1,0 +1,13 @@
+.patient-sidebar {
+  min-width: 180px;
+  padding: 2rem 1rem;
+  background: #e3f1fb;
+  border-right: 1px solid #b6d6e7;
+  min-height: 80vh;
+}
+
+.patient-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
