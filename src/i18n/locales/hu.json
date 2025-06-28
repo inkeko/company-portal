@@ -26,7 +26,10 @@
   "menu": {
     "home": "Kezdőlap",
     "appointments": "Időpontjaim",
-    "profile": "Profilom"
+    "book": "Új időpont foglalás",
+    "profile": "Profilom",
+    "documents": "Dokumentumok",
+    "logout": "Kilépés"
   }
 },
   "footer": {
